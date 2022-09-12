@@ -17,6 +17,7 @@ import { toggleAssistant } from 'modules/Account/Account.actions'
 import { ToogleAssistantPayload } from 'modules/Account/types'
 import { connect } from 'react-redux'
 import { RootState } from 'common/redux/types'
+import Home from 'pages/home/Home'
 
 interface Props {
   toggleAssistant?: (param: ToogleAssistantPayload) => void
@@ -42,13 +43,14 @@ const App: React.FunctionComponent<Props> = ({ toggleAssistant }) => {
         <Route exact path="/json" component={ProjectForm} />
         <Route exact path="/spinner" component={Spinner} />
         <Route exact path="/register" component={RegisterConnected} />
-        <Route
+        {/* <Route
           exact
           path="/"
           render={(routeProps): JSX.Element => (
             <EntitiesExplorer {...routeProps.location} />
           )}
-        />
+        /> */}
+        <Route exact path="/" render={Home} />
         <Route path="/entities/select" component={EntitiesSelect} />
         <Route path="/:entityType/new" component={CreateEntity} />
         <Route

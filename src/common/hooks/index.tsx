@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 interface HooksReturnType {
   width: number
@@ -36,4 +36,26 @@ function useWindowSize(): HooksReturnType {
   return windowSize
 }
 
-export { useWindowSize }
+function useTimeout(callback: () => void, delay: number | null): void {
+  const savedCallback = useRef(callback)
+
+  // Remember the latest callback if it changes.
+  useEffect(() => {
+    savedCallback.current = callback
+  }, [callback])
+
+  // Set up the timeout.
+  useEffect(() => {
+    // Don't schedule if no delay is specified.
+    // Note: 0 is a valid value for delay.
+    if (!delay && delay !== 0) {
+      return (): void => null
+    }
+
+    const id = setTimeout(() => savedCallback.current(), delay)
+
+    return (): void => clearTimeout(id)
+  }, [delay])
+}
+
+export { useWindowSize, useTimeout }

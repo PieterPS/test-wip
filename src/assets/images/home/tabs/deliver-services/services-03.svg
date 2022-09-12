@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="52px" viewBox="0 0 56 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>project-03</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="47 31.5 43.5 35 47 38.5 47 42 43.5 42 40 38.5 36.5 42 33 42 33 38.5 36.5 35 33 31.5 33 28 36.5 28 40 31.5 43.5 28 47 28"></polygon>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-" transform="translate(-328.000000, -3163.000000)">
+            <g id="project-03" transform="translate(328.000000, 3164.000000)">
+                <path d="M35.75,44 L39,44 C39,32.9541667 30.2696875,24 19.5,24 C8.7303125,24 0,32.9541667 0,44 L3.25,44 C3.25,34.81 10.53975,27.3333333 19.5,27.3333333 C28.46025,27.3333333 35.75,34.81 35.75,44" id="Fill-5" fill="#333C4E"></path>
+                <path d="M18,2.94642857 C22.4408571,2.94642857 26.0535714,6.55914286 26.0535714,11 C26.0535714,15.4408571 22.4408571,19.0535714 18,19.0535714 C13.5591429,19.0535714 9.94642857,15.4408571 9.94642857,11 C9.94642857,6.55914286 13.5591429,2.94642857 18,2.94642857 Z M18,22 C24.0751429,22 29,17.0751429 29,11 C29,4.92485714 24.0751429,0 18,0 C11.9248571,0 7,4.92485714 7,11 C7,17.0751429 11.9248571,22 18,22 Z" id="Fill-6" stroke="#333C4E" stroke-width="0.3" fill="#333C4E"></path>
+                <circle id="Oval" stroke="#333C4E" stroke-width="2.6" fill="#FAFAFA" fill-rule="nonzero" cx="40" cy="35" r="14"></circle>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" stroke="#00D2FF" stroke-width="2" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
